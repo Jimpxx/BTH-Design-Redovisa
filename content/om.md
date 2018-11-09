@@ -19,10 +19,10 @@ views:
 Om
 =========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/om.md`.
+<!-- Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/om.md`. -->
 
-Skriv några kloka ord om kursen?
+Denna webbplatsen är en del av kursen Design v2 på BTH.
 
-Lägg till en representativ bild för kursen, enligt ditt egna val.
+Denna kursen fokuserar på design av hemsidor.
 
-[FIGURE src=image/car.png?w=300 caption="En fin bil som demobild."]
+[FIGURE src=image/css.png?w=300 caption="En bild på loggan till CSS."]
