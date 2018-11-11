@@ -5,6 +5,19 @@
  * to style up the website so it is useable.
  */
 
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+
+
+html {
+    font-family: "oswald", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
 /* Hide submenu, leave this to kmom02 */
 .rm-desktop ul {
     display: none;
@@ -13,4 +26,127 @@
 /* Hide responsive/mobile menu, leave this to kmom02 */
 .rm-navbar-max {
     display: none;
+}
+
+.site-logo {
+    display: none;
+}
+
+.wrap-all {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+a {
+    display: inline;
+    text-decoration: none;
+    color: #f21706;
+}
+
+a:hover {
+    color: #d11104;
+}
+
+
+/* ####################################### Header (Navigation) ############################################### */
+
+.region-header {
+    overflow: auto;
+}
+
+.region-header-col-1 {
+    float: left;
+    width: 15%;
+}
+
+.region-header-col-2 {
+    float: left;
+    width: 75%;
+}
+
+.region-header-col-3 {
+    float: left;
+    width: 10%;
+}
+
+.region-header-col-1 .site-logo-text {
+    font-size: 2rem;
+}
+
+.region-header-col-1 .site-logo-text a {
+    color: #222;
+}
+
+.rm-navbar {
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    color: #222;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.rm-navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.rm-navbar li {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1em;
+    color: #222;
+    margin-right: -4px;
+}
+
+.rm-navbar li:hover {
+    background-color: #fff;
+    color: #f21706;
+}
+
+.rm-navbar li ul {
+    position: absolute;
+    display: none;
+    width: inherit;
+}
+
+.rm-navbar li:hover ul {
+    display: block;
+}
+
+.rm-navbar li ul li {
+    display: block;
+}
+
+.rm-navbar a {
+    display: block;
+    text-decoration: none;
+    color: #222;
+}
+
+.rm-navbar a:hover {
+    background-color: #fff;
+    color: #f21706;
+}
+
+/* ####################################### Footer ############################################### */
+
+.region-footer {
+    overflow: auto;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.footer-column {
+    float: left;
+    width: 33%;
+}
+
+.column {
+    margin-bottom: 2rem;
 }
