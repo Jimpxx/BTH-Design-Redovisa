@@ -9,8 +9,14 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
 
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-family: "oswald", sans-serif;
+    line-height: 1.7;
+    font-size: 100%;
 }
 
 body {
@@ -32,7 +38,12 @@ body {
     display: none;
 }
 
-.wrap-all {
+
+
+
+/* ####################################### General styles ############################################### */
+
+.inner-wrap {
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -47,16 +58,46 @@ a:hover {
     color: #d11104;
 }
 
+.right {
+    float: right;
+}
+
+.figure {
+    margin-left: 10px;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 2.3rem;
+    line-height: 1.2;
+    border-bottom: 1px solid #222;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+
 
 /* ####################################### Header (Navigation) ############################################### */
 
+.inner-wrap.inner-wrap-header {
+    max-width: 100%;
+}
+
+.inner-wrap.header .row {
+    max-width: 100%;
+}
+
 .region-header {
     overflow: auto;
+    background: #eee;
 }
 
 .region-header-col-1 {
     float: left;
     width: 15%;
+    text-align: center;
 }
 
 .region-header-col-2 {
@@ -67,6 +108,7 @@ a:hover {
 .region-header-col-3 {
     float: left;
     width: 10%;
+    text-align: center;
 }
 
 .region-header-col-1 .site-logo-text {
@@ -80,7 +122,6 @@ a:hover {
 .rm-navbar {
     height: 50px;
     width: 100%;
-    background-color: #fff;
     color: #222;
     font-size: 1rem;
     font-weight: bold;
@@ -91,7 +132,7 @@ a:hover {
     padding: 0;
     margin: 0;
     text-align: center;
-    background-color: #fff;
+    background-color: #eee;
 }
 
 .rm-navbar li {
@@ -105,7 +146,6 @@ a:hover {
 }
 
 .rm-navbar li:hover {
-    background-color: #fff;
     color: #f21706;
 }
 
@@ -130,16 +170,36 @@ a:hover {
 }
 
 .rm-navbar a:hover {
-    background-color: #fff;
     color: #f21706;
 }
 
+/* ####################################### Main ############################################### */
+
+.region-main {
+    width: 75%;
+    margin: 0 auto;
+
+}
+
+
+
+
+
 /* ####################################### Footer ############################################### */
+
+.inner-wrap.inner-wrap-footer {
+    max-width: 100%;
+}
+
+.inner-wrap.footer .row {
+    max-width: 100%;
+}
 
 .region-footer {
     overflow: auto;
     text-align: center;
     margin-top: 2rem;
+    background: #eee;
 }
 
 .footer-column {
