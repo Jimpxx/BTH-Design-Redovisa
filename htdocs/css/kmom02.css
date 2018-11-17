@@ -4688,10 +4688,35 @@ p {
 .rm-desktop ul {
   background-color: #ddd;
 }
-/* ####################################### Main ############################################### */
+/* ####################################### Main + Sidebars ############################################### */
+.inner-wrap-main {
+  overflow: auto;
+}
 .region-main {
-  width: 75%;
-  margin: 0 auto;
+  width: 70%;
+  margin-left: 15%;
+  float: left;
+  overflow: auto;
+}
+.region-main.has-sidebar {
+  margin-left: 0;
+}
+.region-main.has-sidebar-left.has-sidebar-right {
+  width: 60%;
+}
+.region-sidebar-right {
+  width: 30%;
+  float: left;
+  padding-left: 15px;
+}
+.region-sidebar-left {
+  width: 30%;
+  float: left;
+  padding-right: 15px;
+}
+.region-sidebar-left.has-sidebar-right,
+.region-sidebar-right.has-sidebar-left {
+  width: 20%;
 }
 /* ####################################### Footer ############################################### */
 .inner-wrap-footer {
@@ -4713,9 +4738,21 @@ p {
 /**
  * Layout for responsive style through media queries.
  */
-@media screen and (max-width: 1500px) {
-  .site-logo {
+/**
+* Navbar
+*/
+@media screen and (max-width: 730px) {
+  .rm-desktop {
     display: none;
+  }
+  .region-header-col-1,
+  .region-header-col-3 {
+    float: left;
+    width: 40%;
+  }
+  .region-header-col-2 {
+    float: left;
+    width: 20%;
   }
 }
 /**

@@ -210,9 +210,21 @@ p {
 /**
  * Layout for responsive style through media queries.
  */
-@media screen and (max-width: 1500px) {
-  .site-logo {
+/**
+* Navbar
+*/
+@media screen and (max-width: 730px) {
+  .rm-desktop {
     display: none;
+  }
+  .region-header-col-1,
+  .region-header-col-3 {
+    float: left;
+    width: 40%;
+  }
+  .region-header-col-2 {
+    float: left;
+    width: 20%;
   }
 }
 /**
