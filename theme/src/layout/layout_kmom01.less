@@ -1,0 +1,199 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+/**
+ * Variables
+ */
+
+@textColor: #222;
+
+
+/**
+ * General layout
+ */
+/* Hide submenu, leave this to kmom02 */
+.rm-desktop ul {
+    display: none;
+}
+
+/* Hide responsive/mobile menu, leave this to kmom02 */
+.rm-navbar-max {
+    display: none;
+}
+
+.site-logo {
+    display: none;
+}
+
+
+
+
+/* ####################################### General styles ############################################### */
+
+.inner-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #ddd;
+}
+
+a {
+    display: inline;
+    text-decoration: none;
+    color: #f21706;
+}
+
+a:hover {
+    color: #d11104;
+}
+
+.right {
+    float: right;
+}
+
+.figure {
+    margin-left: 10px;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 2.3rem;
+    line-height: 1.2;
+    border-bottom: 1px solid #222;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+
+
+/* ####################################### Header (Navigation) ############################################### */
+
+.inner-wrap.inner-wrap-header {
+    max-width: 100%;
+}
+
+.inner-wrap.header .row {
+    max-width: 100%;
+}
+
+.region-header {
+    overflow: auto;
+    background: #eee;
+}
+
+.region-header-col-1 {
+    float: left;
+    width: 15%;
+    text-align: center;
+}
+
+.region-header-col-2 {
+    float: left;
+    width: 75%;
+}
+
+.region-header-col-3 {
+    float: left;
+    width: 10%;
+    text-align: center;
+}
+
+.region-header-col-1 .site-logo-text {
+    font-size: 2rem;
+}
+
+.region-header-col-1 .site-logo-text a {
+    color: #222;
+}
+
+.rm-navbar {
+    height: 50px;
+    width: 100%;
+    color: #222;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.rm-navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #eee;
+}
+
+.rm-navbar li {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1em;
+    color: #222;
+    margin-right: -4px;
+}
+
+.rm-navbar li:hover {
+    color: #f21706;
+}
+
+.rm-navbar li ul {
+    position: absolute;
+    display: none;
+    width: inherit;
+}
+
+.rm-navbar li:hover ul {
+    display: block;
+}
+
+.rm-navbar li ul li {
+    display: block;
+}
+
+.rm-navbar a {
+    display: block;
+    text-decoration: none;
+    color: #222;
+}
+
+.rm-navbar a:hover {
+    color: #f21706;
+}
+
+/* ####################################### Main ############################################### */
+
+.region-main {
+    width: 75%;
+    margin: 0 auto;
+
+}
+
+
+/* ####################################### Footer ############################################### */
+
+.inner-wrap.inner-wrap-footer {
+    max-width: 100%;
+}
+
+.inner-wrap.footer .row {
+    max-width: 100%;
+}
+
+.region-footer {
+    overflow: auto;
+    text-align: center;
+    margin-top: 2rem;
+    background: #eee;
+}
+
+.footer-column {
+    float: left;
+    width: 33%;
+}
+
+.column {
+    margin-bottom: 2rem;
+}
