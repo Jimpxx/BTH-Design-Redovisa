@@ -1,3 +1,3 @@
-#### Footer col 3
+#### Skola
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+Jag studerar Webbprogrammering på BTH och denna sida görs för kursen Teknisk webbdesign och användbarhet (design).

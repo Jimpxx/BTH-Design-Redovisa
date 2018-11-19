@@ -4687,6 +4687,13 @@ p {
 }
 .rm-desktop ul {
   background-color: #ddd;
+  color: #222;
+}
+.rm-navbar li:hover {
+  color: #f21706;
+}
+.rm-navbar li a {
+  color: #222;
 }
 /* ####################################### Main + Sidebars ############################################### */
 .inner-wrap-main {
@@ -4723,10 +4730,12 @@ p {
   max-width: 100%;
 }
 .region-footer {
-  overflow: auto;
   text-align: center;
   margin-top: 2rem;
   background: #eee;
+}
+.footer-column-wrapper {
+  overflow: auto;
 }
 .footer-column {
   float: left;
@@ -4734,6 +4743,10 @@ p {
 }
 .column {
   margin-bottom: 2rem;
+}
+.site-footer p {
+  margin: 0;
+  padding: 1rem;
 }
 /**
  * Layout for responsive style through media queries.

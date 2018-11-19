@@ -1,3 +1,7 @@
-#### Footer col 1
+#### Länkar
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+Här är några länkar som är bra att ha.
+
+[Hem](/design/me/redovisa/htdocs/)
+
+[Om](/design/me/redovisa/htdocs/om)
