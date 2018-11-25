@@ -7,42 +7,20 @@
  */
 
 
-
 /**
 * General layout
 */
 
-
 .row {
     #desinax-vgrid.row();
-
-    // background-color: #0f0;
     margin-bottom: 12px;
 }
 
 
-
-
-
-
-
-// .inner-wrap {
-//     #desinax-vgrid.grid(1100px);
-// }
-
-// .inner-wrap-header,
-// .inner-wrap-footer {
-//     #desinax-vgrid.grid(100%);
-// }
-
 .inner-wrap {
     #desinax-vgrid.grid(1100px);
-    background: #ddd;
-    // max-width: 1100px;
-    // margin: 0 auto;
-    // background-color: #ddd;
+    // background: #ddd;
 }
-
 
 
 .vgrid .inner-wrap {
@@ -77,46 +55,28 @@ a:hover {
     // float: right;
 }
 
-.figure {
-    // margin-left: 10px;
-    // margin-top: 0;
-}
-
 h1 {
-    // font-size: 2.3rem;
-    // line-height: 1.2;
     border-bottom: 1px solid #222;
-}
-
-p {
-    // font-size: 1.1rem;
 }
 
 
 /* ####################################### Header (Navigation) ############################################### */
 
 .outer-wrap-header {
-    // overflow: auto;
-    // .clearfix();
     background: #eee;
 }
 
 .inner-wrap-header {
     #desinax-vgrid.grid(100%);
-    // max-width: 100%;
 }
 
 .region-header-col-1,
 .region-header-col-3 {
     #desinax-vgrid.column(5);
-    // float: left;
-    // width: 20%;
 }
 
 .region-header-col-2 {
     #desinax-vgrid.column(14);
-    // float: left;
-    // width: 60%;
     text-align: center;
 }
 
@@ -126,10 +86,6 @@ p {
 
 .region-header-col-1 .site-logo-text a {
     color: #222;
-}
-
-.rm-navbar {
-    // position: absolute;
 }
 
 .rm-desktop ul {
@@ -147,24 +103,35 @@ p {
 
 
 
-/* ####################################### Breadcrumbs ############################################### */
+/* ####################################### Breadcrumbs + FlashImage + Flashmessage ############################################### */
 
 .region-flash {
     #desinax-vgrid.column(@columns);
 }
 
+.region-flash-message {
+    #desinax-vgrid.column(@columns);
+}
+
+
+// Fixing the breadcrumbs
 .region-breadcrumb {
     #desinax-vgrid.column(@columns);
+}
+
+.breadcrumb-list li {
+    display: inline-block; // All li:s on one line
+}
+
+.breadcrumb-list li+li:before {
+    padding: 8px;
+    content: "/\00a0"; // Adding a slash before each li (except the first one)
 }
 
 
 
 /* ####################################### Main + Sidebars ############################################### */
 
-.inner-wrap-main {
-    // overflow: auto;
-    // .clearfix();
-}
 
 .region-main {
     #desinax-vgrid.column(@columns * 3 / 4);
@@ -193,19 +160,25 @@ p {
 }
 
 
-// .region-sidebar-left {
-//     // width: 30%;
-//     // float: left;
-//     // padding-right: 15px;
-// }
-
 .region-sidebar-left.has-sidebar-right,
 .region-sidebar-right.has-sidebar-left {
     #desinax-vgrid.column(@columns * 1 / 4 - 1);
 }
 
 
+.next-previous div {
+    #desinax-vgrid.column(@columns * 1 / 2);
+    text-align: center;
+}
 
+// Changes position for next and previous
+.next-previous .next {
+    #desinax-vgrid.push(12);
+}
+
+.next-previous .previous {
+    #desinax-vgrid.pull(12+12);
+}
 
 
 /* ####################################### Footer ############################################### */
