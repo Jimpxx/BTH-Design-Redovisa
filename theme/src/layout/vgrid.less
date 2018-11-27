@@ -19,7 +19,6 @@
 
 .inner-wrap {
     #desinax-vgrid.grid(1100px);
-    // background: #ddd;
 }
 
 
@@ -34,9 +33,6 @@
 }
 
 
-
-
-
 .site-logo {
     display: none;
 }
@@ -49,10 +45,7 @@ a {
 
 a:hover {
     color: #d11104;
-}
-
-.right {
-    // float: right;
+    text-decoration: underline;
 }
 
 h1 {
@@ -99,6 +92,7 @@ h1 {
 
 .rm-navbar li a {
     color: #222;
+    font-weight: bold;
 }
 
 
@@ -180,16 +174,43 @@ h1 {
     #desinax-vgrid.pull(12+12);
 }
 
+.next-previous a {
+    background-color: #222;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.next-previous a:hover {
+    background-color: #d11104;
+}
+
+
+// Byline
+.region-main .block h1 {
+    #desinax-vgrid.column(@columns);
+}
+
+.region-main .block p:first-of-type {
+    #desinax-vgrid.column(@columns * 1 / 4);
+}
+
+.region-main .block p:last-of-type {
+    #desinax-vgrid.column(@columns * 3 / 4);
+}
+
 
 /* ####################################### Footer ############################################### */
 
 .outer-wrap-footer {
     background: #eee;
 }
-.inner-wrap-footer {
-    // max-width: 100%;
-    // background: #;
-}
+
 
 .region-footer {
     text-align: center;
@@ -197,29 +218,15 @@ h1 {
     
 }
 
-.footer-column-wrapper {
-    // overflow: auto;
-    // .clearfix();
-}
 
 .footer-column {
     #desinax-vgrid.column(@columns / 3);
-    // float: left;
-    // width: 33%;
 }
 
 .site-footer {
     #desinax-vgrid.column(@columns);
 }
 
-.column {
-    // margin-bottom: 2rem;
-}
-
-.site-footer p {
-    // margin: 0;
-    // padding: 1rem;
-}
 
 
 /* ####################################### Responsive 1, 2, 3 ############################################### */
@@ -256,7 +263,25 @@ h1 {
         #desinax-vgrid.push(0);
     }
     
-    // .footer-column {
-    //     #desinax-vgrid.column(@columns);
-    // }
+    .footer-column {
+        #desinax-vgrid.column(@columns);
+    }
+}
+
+
+// @media screen and (max-width: 730px) {
+@media screen and (max-width: 940px) {
+    .rm-desktop {
+        display: none;
+    }
+
+    .region-header-col-1,
+    .region-header-col-3 {
+        #desinax-vgrid.column(7);
+    }
+
+    .region-header-col-2 {
+        #desinax-vgrid.column(10);
+        // text-align: center;
+    }
 }
