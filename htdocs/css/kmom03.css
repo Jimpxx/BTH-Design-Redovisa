@@ -5173,6 +5173,9 @@ h1 {
 .next-previous a:hover {
   background-color: #d11104;
 }
+.toc {
+  list-style: none;
+}
 .region-main .block h1 {
   display: inline;
   float: left;
