@@ -1,5 +1,13 @@
 /*!
- * Stylesheet for design kmom03.
+ * Stylesheet for design 04_dark.less.
+ *
+ * This stylesheet is for the design course and kmom02 where we use LESS.
+ */
+/*
+*   Variables and imports
+*/
+/*!
+ * Stylesheet for design kmom04.
  *
  * This stylesheet is for the design course and kmom02 where we use LESS.
  */
@@ -4395,13 +4403,13 @@ template {
 }
 html {
   overflow-y: scroll;
-  background-color: #fff;
-  color: #222;
+  background-color: #333;
+  color: #eee;
 }
 body {
   margin: 0;
   padding: 0;
-  background-color: #fff;
+  background-color: #333;
   font: 16px/1.5 Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", Georgia, "Times New Roman", Times, serif;
 }
 img {
@@ -5031,11 +5039,14 @@ h1 {
 }
 /* ####################################### Header (Navigation) ############################################### */
 .outer-wrap-header {
-  background: #eee;
+  background: #222;
 }
 .inner-wrap-header {
   margin-right: auto;
   margin-left: auto;
+  max-width: 100%;
+}
+.inner-wrap-header .row {
   max-width: 100%;
 }
 .region-header-col-1,
@@ -5058,17 +5069,17 @@ h1 {
   font-size: 2rem;
 }
 .region-header-col-1 .site-logo-text a {
-  color: #222;
+  color: #eee;
 }
 .rm-desktop ul {
-  background-color: #ddd;
-  color: #222;
+  background-color: #222;
+  color: #eee;
 }
 .rm-navbar li:hover {
   color: #f21706;
 }
 .rm-navbar li a {
-  color: #222;
+  color: #eee;
   font-weight: bold;
 }
 /* ####################################### Breadcrumbs + FlashImage + Flashmessage ############################################### */
@@ -5171,7 +5182,7 @@ h1 {
   font-size: 16px;
 }
 .next-previous a:hover {
-  background-color: #d11104;
+  background-color: #f21706;
 }
 .toc {
   list-style: none;
@@ -5202,7 +5213,7 @@ h1 {
 }
 /* ####################################### Footer ############################################### */
 .outer-wrap-footer {
-  background: #eee;
+  background: #222;
 }
 .region-footer {
   text-align: center;
@@ -5334,3 +5345,9 @@ h1 {
 /**
  * My own settings, not currently in their own module.
  */
+/*
+*   Extra styles
+*/
+code {
+  background-color: #333;
+}

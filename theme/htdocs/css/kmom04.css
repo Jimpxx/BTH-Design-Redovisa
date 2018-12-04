@@ -1,5 +1,5 @@
 /*!
- * Stylesheet for design kmom03.
+ * Stylesheet for design kmom04.
  *
  * This stylesheet is for the design course and kmom02 where we use LESS.
  */
@@ -5031,11 +5031,14 @@ h1 {
 }
 /* ####################################### Header (Navigation) ############################################### */
 .outer-wrap-header {
-  background: #eee;
+  background: #fff;
 }
 .inner-wrap-header {
   margin-right: auto;
   margin-left: auto;
+  max-width: 100%;
+}
+.inner-wrap-header .row {
   max-width: 100%;
 }
 .region-header-col-1,
@@ -5061,7 +5064,7 @@ h1 {
   color: #222;
 }
 .rm-desktop ul {
-  background-color: #ddd;
+  background-color: #fff;
   color: #222;
 }
 .rm-navbar li:hover {
@@ -5171,7 +5174,7 @@ h1 {
   font-size: 16px;
 }
 .next-previous a:hover {
-  background-color: #d11104;
+  background-color: #f21706;
 }
 .toc {
   list-style: none;

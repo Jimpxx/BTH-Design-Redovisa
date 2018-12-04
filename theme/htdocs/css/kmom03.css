@@ -5176,6 +5176,9 @@ h1 {
 .toc {
   list-style: none;
 }
+.figure.right {
+  margin-left: 0;
+}
 .region-main .block h1 {
   display: inline;
   float: left;

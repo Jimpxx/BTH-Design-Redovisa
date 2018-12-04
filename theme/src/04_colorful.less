@@ -1,0 +1,45 @@
+/*!
+ * Stylesheet for design 04_colorful.less.
+ *
+ * This stylesheet is for the design course and kmom02 where we use LESS.
+ */
+
+
+@import "kmom04.less";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+@fontFamilyOpenSans: 'Open Sans', sans-serif;
+
+@bgColorNav: #04D98B;
+@bgColorHtml: #BAF291;
+@bgColorBody: #BAF291;
+@bgColorFooter: #04D98B;
+@textColor: #222;
+// @linkColor: #f21706;
+@linkColor: #c714df;
+// @linkColorHover: #d11104;
+@linkColorHover: #aa0ebe;
+
+
+// Edit the typographic grid to my needs
+@fontFamilyHeadings: @fontFamilyOpenSans; // @fontFamilyHelvetica; //"serif";
+@fontFamilyBody: @fontFamilyOpenSans; // @fontFamilyGaramond; //"sans-serif"; // "serif"
+@fontFamilyCode: @fontFamilyCourier; //"monospace";
+
+// Magic number and base fontsize
+@magicNumber:  24px;  // 22px
+@fontSizeBody: 16px;
+
+
+/*
+*   Extra styles
+*/
+
+
+code {
+    background-color: @bgColorBody;
+}
+
+a {
+    font-weight: bold;
+}

@@ -1,5 +1,10 @@
 /*!
- * Stylesheet for design kmom03.
+ * Stylesheet for design 04_minimalistic.less.
+ *
+ * This stylesheet is for the design course and kmom02 where we use LESS.
+ */
+/*!
+ * Stylesheet for design kmom04.
  *
  * This stylesheet is for the design course and kmom02 where we use LESS.
  */
@@ -4402,7 +4407,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fff;
-  font: 16px/1.5 Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", Georgia, "Times New Roman", Times, serif;
+  font: 16px/1.5 'Roboto', sans-serif;
 }
 img {
   max-width: 100%;
@@ -4413,7 +4418,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Merriweather', serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -5020,10 +5025,10 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 a {
   display: inline;
   text-decoration: none;
-  color: #f21706;
+  color: #1339b6;
 }
 a:hover {
-  color: #d11104;
+  color: #123299;
   text-decoration: underline;
 }
 h1 {
@@ -5036,6 +5041,9 @@ h1 {
 .inner-wrap-header {
   margin-right: auto;
   margin-left: auto;
+  max-width: 100%;
+}
+.inner-wrap-header .row {
   max-width: 100%;
 }
 .region-header-col-1,
@@ -5061,11 +5069,11 @@ h1 {
   color: #222;
 }
 .rm-desktop ul {
-  background-color: #ddd;
+  background-color: #eee;
   color: #222;
 }
 .rm-navbar li:hover {
-  color: #f21706;
+  color: #1339b6;
 }
 .rm-navbar li a {
   color: #222;
@@ -5171,7 +5179,7 @@ h1 {
   font-size: 16px;
 }
 .next-previous a:hover {
-  background-color: #d11104;
+  background-color: #1339b6;
 }
 .toc {
   list-style: none;
@@ -5334,3 +5342,27 @@ h1 {
 /**
  * My own settings, not currently in their own module.
  */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Merriweather Regular'), local('Merriweather-Regular'), url(https://fonts.gstatic.com/s/merriweather/v19/u-440qyriQwlOrhSvowK_l5-fCZJ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Merriweather Bold'), local('Merriweather-Bold'), url(https://fonts.gstatic.com/s/merriweather/v19/u-4n0qyriQwlOrhSvowK_l52xwNZWMf_.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}

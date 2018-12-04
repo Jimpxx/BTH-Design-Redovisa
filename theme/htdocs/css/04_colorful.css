@@ -1,5 +1,10 @@
 /*!
- * Stylesheet for design kmom03.
+ * Stylesheet for design 04_colorful.less.
+ *
+ * This stylesheet is for the design course and kmom02 where we use LESS.
+ */
+/*!
+ * Stylesheet for design kmom04.
  *
  * This stylesheet is for the design course and kmom02 where we use LESS.
  */
@@ -4395,14 +4400,14 @@ template {
 }
 html {
   overflow-y: scroll;
-  background-color: #fff;
+  background-color: #BAF291;
   color: #222;
 }
 body {
   margin: 0;
   padding: 0;
-  background-color: #fff;
-  font: 16px/1.5 Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", Georgia, "Times New Roman", Times, serif;
+  background-color: #BAF291;
+  font: 16px/1.5 'Open Sans', sans-serif;
 }
 img {
   max-width: 100%;
@@ -4413,7 +4418,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -5020,10 +5025,10 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 a {
   display: inline;
   text-decoration: none;
-  color: #f21706;
+  color: #c714df;
 }
 a:hover {
-  color: #d11104;
+  color: #aa0ebe;
   text-decoration: underline;
 }
 h1 {
@@ -5031,11 +5036,14 @@ h1 {
 }
 /* ####################################### Header (Navigation) ############################################### */
 .outer-wrap-header {
-  background: #eee;
+  background: #04D98B;
 }
 .inner-wrap-header {
   margin-right: auto;
   margin-left: auto;
+  max-width: 100%;
+}
+.inner-wrap-header .row {
   max-width: 100%;
 }
 .region-header-col-1,
@@ -5061,11 +5069,11 @@ h1 {
   color: #222;
 }
 .rm-desktop ul {
-  background-color: #ddd;
+  background-color: #04D98B;
   color: #222;
 }
 .rm-navbar li:hover {
-  color: #f21706;
+  color: #c714df;
 }
 .rm-navbar li a {
   color: #222;
@@ -5171,7 +5179,7 @@ h1 {
   font-size: 16px;
 }
 .next-previous a:hover {
-  background-color: #d11104;
+  background-color: #c714df;
 }
 .toc {
   list-style: none;
@@ -5202,7 +5210,7 @@ h1 {
 }
 /* ####################################### Footer ############################################### */
 .outer-wrap-footer {
-  background: #eee;
+  background: #04D98B;
 }
 .region-footer {
   text-align: center;
@@ -5334,3 +5342,24 @@ h1 {
 /**
  * My own settings, not currently in their own module.
  */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOUuhs.ttf) format('truetype');
+}
+/*
+*   Extra styles
+*/
+code {
+  background-color: #BAF291;
+}
+a {
+  font-weight: bold;
+}

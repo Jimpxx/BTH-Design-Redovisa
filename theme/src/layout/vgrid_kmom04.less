@@ -6,6 +6,11 @@
  * Variables
  */
 
+@bgColorFooter: #fff;
+@bgColorNav: #fff;
+@textColor: #222;
+@linkColor: #f21706;
+@linkColorHover: #d11104;
 
 /**
 * General layout
@@ -40,11 +45,13 @@
 a {
     display: inline;
     text-decoration: none;
-    color: #f21706;
+    // color: #f21706;
+    color: @linkColor;
 }
 
 a:hover {
-    color: #d11104;
+    // color: #d11104;
+    color: @linkColorHover;
     text-decoration: underline;
 }
 
@@ -56,11 +63,16 @@ h1 {
 /* ####################################### Header (Navigation) ############################################### */
 
 .outer-wrap-header {
-    background: #eee;
+    // background: #eee;
+    background: @bgColorNav;
 }
 
 .inner-wrap-header {
     #desinax-vgrid.grid(100%);
+}
+
+.inner-wrap-header .row {
+    max-width: 100%;
 }
 
 .region-header-col-1,
@@ -78,20 +90,24 @@ h1 {
 }
 
 .region-header-col-1 .site-logo-text a {
-    color: #222;
+    // color: #222;
+    color: @textColor;
 }
 
 .rm-desktop ul {
-    background-color: #ddd;
-    color: #222;
+    // background-color: #ddd;
+    background-color: @bgColorNav;
+    // color: #222;
+    color: @textColor;
 }
 
 .rm-navbar li:hover {
-    color: #f21706;
+    // color: #f21706;
+    color: @linkColor;
 }
 
 .rm-navbar li a {
-    color: #222;
+    color: @textColor;
     font-weight: bold;
 }
 
@@ -188,13 +204,22 @@ h1 {
 }
 
 .next-previous a:hover {
-    background-color: #d11104;
+    // background-color: #d11104;
+    background-color: @linkColor;
 }
 
 
 .toc {
     list-style: none;
 }
+
+.figure.right {
+    margin-left: 0;
+}
+
+// .region-main .block p:first-of-type {
+//     margin-left: 0;
+// }
 
 
 // Byline
@@ -214,7 +239,8 @@ h1 {
 /* ####################################### Footer ############################################### */
 
 .outer-wrap-footer {
-    background: #eee;
+    // background: #eee;
+    background: @bgColorFooter;
 }
 
 

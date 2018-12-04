@@ -1,0 +1,301 @@
+/**
+ * Layout using the vertical grid
+ */
+
+/**
+ * Variables
+ */
+
+
+/**
+* General layout
+*/
+
+.row {
+    #desinax-vgrid.row();
+    margin-bottom: 12px;
+}
+
+
+.inner-wrap {
+    #desinax-vgrid.grid(1100px);
+}
+
+
+.vgrid .inner-wrap {
+    @gridImage: "../img/grid_24x30x10-nomargin.png";
+    //@gridImage: "../../img/grid_12x60x20-nomargin.png";
+    #desinax-vgrid.showGrid(@gridImage, 1100px);
+
+    &.inner-wrap-header {
+        #desinax-vgrid.showGrid(@gridImage);
+    }
+}
+
+
+.site-logo {
+    display: none;
+}
+
+a {
+    display: inline;
+    text-decoration: none;
+    color: #f21706;
+}
+
+a:hover {
+    color: #d11104;
+    text-decoration: underline;
+}
+
+h1 {
+    border-bottom: 1px solid #222;
+}
+
+
+/* ####################################### Header (Navigation) ############################################### */
+
+.outer-wrap-header {
+    background: #eee;
+}
+
+.inner-wrap-header {
+    #desinax-vgrid.grid(100%);
+}
+
+.region-header-col-1,
+.region-header-col-3 {
+    #desinax-vgrid.column(5);
+}
+
+.region-header-col-2 {
+    #desinax-vgrid.column(14);
+    text-align: center;
+}
+
+.region-header-col-1 .site-logo-text {
+    font-size: 2rem;
+}
+
+.region-header-col-1 .site-logo-text a {
+    color: #222;
+}
+
+.rm-desktop ul {
+    background-color: #ddd;
+    color: #222;
+}
+
+.rm-navbar li:hover {
+    color: #f21706;
+}
+
+.rm-navbar li a {
+    color: #222;
+    font-weight: bold;
+}
+
+
+
+/* ####################################### Breadcrumbs + FlashImage + Flashmessage ############################################### */
+
+.region-flash {
+    #desinax-vgrid.column(@columns);
+}
+
+.region-flash-message {
+    #desinax-vgrid.column(@columns);
+}
+
+
+// Fixing the breadcrumbs
+.region-breadcrumb {
+    #desinax-vgrid.column(@columns);
+}
+
+.breadcrumb-list li {
+    display: inline-block; // All li:s on one line
+}
+
+.breadcrumb-list li+li:before {
+    padding: 8px;
+    content: "/\00a0"; // Adding a slash before each li (except the first one)
+}
+
+
+
+/* ####################################### Main + Sidebars ############################################### */
+
+
+.region-main {
+    #desinax-vgrid.column(@columns * 3 / 4);
+    #desinax-vgrid.push(2);
+
+    &.has-sidebar {
+        #desinax-vgrid.push(0);
+    }
+
+    &.has-sidebar-right {
+        #desinax-vgrid.column(@columns * 3 / 4 - 1);
+    }
+
+    &.has-sidebar-left.has-sidebar-right {
+        #desinax-vgrid.column(@columns - 10);
+    }
+}
+
+.region-sidebar-left,
+.region-sidebar-right {
+    #desinax-vgrid.column(@columns * 1 / 4);
+}
+
+.region-sidebar-right {
+    #desinax-vgrid.push(1);
+}
+
+
+.region-sidebar-left.has-sidebar-right,
+.region-sidebar-right.has-sidebar-left {
+    #desinax-vgrid.column(@columns * 1 / 4 - 1);
+}
+
+
+.next-previous div {
+    #desinax-vgrid.column(@columns * 1 / 2);
+    text-align: center;
+}
+
+// Changes position for next and previous
+.next-previous .next {
+    #desinax-vgrid.push(12);
+}
+
+.next-previous .previous {
+    #desinax-vgrid.pull(12+12);
+}
+
+// makes next and previous to buttons
+.next-previous a {
+    background-color: #222;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.next-previous a:hover {
+    background-color: #d11104;
+}
+
+
+.toc {
+    list-style: none;
+}
+
+.figure.right {
+    margin-left: 0;
+}
+
+// .region-main .block p:first-of-type {
+//     margin-left: 0;
+// }
+
+
+// Byline
+.region-main .block h1 {
+    #desinax-vgrid.column(@columns);
+}
+
+.region-main .block p:first-of-type {
+    #desinax-vgrid.column(@columns * 1 / 4);
+}
+
+.region-main .block p:last-of-type {
+    #desinax-vgrid.column(@columns * 3 / 4);
+}
+
+
+/* ####################################### Footer ############################################### */
+
+.outer-wrap-footer {
+    background: #eee;
+}
+
+
+.region-footer {
+    text-align: center;
+    // margin-top: 2rem;
+    
+}
+
+
+.footer-column {
+    #desinax-vgrid.column(@columns / 3);
+}
+
+.site-footer {
+    #desinax-vgrid.column(@columns);
+}
+
+
+
+/* ####################################### Responsive 1, 2, 3 ############################################### */
+
+@media screen and (max-width: 1000px) {
+    .region-main {
+        #desinax-vgrid.column(@columns);
+        // #desinax-vgrid.push(2);
+
+        &.has-sidebar-left.has-sidebar-right {
+            #desinax-vgrid.column(@columns);
+        }
+    }
+
+    .region-sidebar-left {
+        #desinax-vgrid.column(@columns);
+        // #desinax-vgrid.push(0);
+    }
+
+    .region-sidebar-left.has-sidebar-right,
+    .region-sidebar-right.has-sidebar-left {
+        #desinax-vgrid.column(@columns);
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    .region-main.has-sidebar-right {
+        #desinax-vgrid.column(@columns);
+    }
+
+    .region-sidebar-right {
+        #desinax-vgrid.column(@columns);
+        #desinax-vgrid.push(0);
+    }
+    
+    .footer-column {
+        #desinax-vgrid.column(@columns);
+    }
+}
+
+
+// @media screen and (max-width: 730px) {
+@media screen and (max-width: 940px) {
+    .rm-desktop {
+        display: none;
+    }
+
+    .region-header-col-1,
+    .region-header-col-3 {
+        #desinax-vgrid.column(7);
+    }
+
+    .region-header-col-2 {
+        #desinax-vgrid.column(10);
+        // text-align: center;
+    }
+}
