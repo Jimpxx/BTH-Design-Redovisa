@@ -30,7 +30,7 @@ views:
                 view: blog-list
 
 ---
-Nytt och Noterat
+Dagens bild
 ===========================
 
-Kortare blogginlägg om vad som händer på dbwebb.se, kurserna samt webbprogrammering och webbutveckling med HTML, CSS, JavaScript, PHP och SQL i allmänhet.
+I denna blogg läggs det upp en bild för varje dag kallad dagens bild. Denna blogg är gjord i utbildningssyfte i kursen Design v2 på BTH.
