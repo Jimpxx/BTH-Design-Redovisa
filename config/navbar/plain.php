@@ -24,6 +24,11 @@ return [
             "title" => "Om denna webbplats.",
         ],
         [
+            "text" => "Blogg",
+            "url" => "blogg",
+            "title" => "Min blogg",
+        ],
+        [
             "text" => "Styleväljare",
             "url" => "style",
             "title" => "Välj stylesheet.",
@@ -32,6 +37,16 @@ return [
             "text" => "Verktyg",
             "url" => "verktyg",
             "title" => "Verktyg och möjligheter för utveckling.",
+        ],
+        [
+            "text" => "Test",
+            "url" => "test",
+            "title" => "Lek runt med olika konstruktioner",
+        ],
+        [
+            "text" => "Rapport",
+            "url" => "rapport",
+            "title" => "Skrivna rapporter",
         ],
     ],
 ];
