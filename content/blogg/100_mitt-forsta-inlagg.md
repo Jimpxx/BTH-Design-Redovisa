@@ -5,7 +5,7 @@ category:
     - Staffe
 published: "2018-12-11"
 ---
-Prommenad
+Promenad
 ==================================
 
 Här är mitt allra första blogg inlägg.
@@ -37,7 +37,7 @@ Som ni ser i bilden kollar hon på något, vad kan det vara?
 I denna bilden fixade jag till bilden lite, roterade den rätt och klippte bort mitt finger och tog bort lite i kanterna så Bella blir mer centrerad.
 
 
-[FIGURE src="image/blogg/bella.jpg?w=300&aro&area=35,25,35,20&f=grayscale" class="figure right w50" caption="inzoomad bild på Bellas ansikte"]
+[FIGURE src="image/blogg/bella.jpg?w=300&aro&area=35,25,35,20&f=grayscale" class="figure right w50" caption="inzoomad bild på Bellas ansikte + svartvit"]
 
 
 Färgglad {#anchor-hit}

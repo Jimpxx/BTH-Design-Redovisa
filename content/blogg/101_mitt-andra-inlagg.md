@@ -18,7 +18,7 @@ Bilden är tagen med min mobilkamera (standardinställningar), jag har en OnePlu
 
 Idag var vi på det sista tillfället i den agilitykurs som jag och Bella gått på i sex veckor. Kursen var en agilitykurs för valpar. 
 
-[FIGURE src=image/blogg/agility.jpg?w=300&aro&area=35,5,35,70&convolve=sharpen class="figure right w50" caption="Inga hopp utan bara portar"]
+[FIGURE src=image/blogg/agility.jpg?w=300&aro&area=35,5,35,70&convolve=sharpen class="figure right w50" caption="Inga hopp, bara portar"]
 
 Detta innebär att det inte är några hopp och de flesta övningarna riktar in sig på att hunden ska lära sig att fokusera på föraren även när det är störningar runt omkring. På det sista tillfället fick vi köra en mindre bana för att se lite hur hunden har utvecklats de senaste sex veckorna.
 
@@ -41,4 +41,4 @@ Bella har under kursens gång fattat tycke för tunnlar, hon älskar att springa
 
 Hon gör det nästan för mycket, så fort hon inte förstår vad hon ska göra letar hon upp en tunnel och springer igenom den.
 
-[FIGURE src=image/blogg/agility.jpg?w=800&h=300&aro&crop-to-fit&f=pixelate,4,1 class="figure center w50" caption="En pixlig agility-tunnel"]
+[FIGURE src=image/blogg/agility.jpg?w=800&h=300&aro&crop-to-fit&f=pixelate,4,1 class="figure center w50" caption="En pixlig agility-bana"]
