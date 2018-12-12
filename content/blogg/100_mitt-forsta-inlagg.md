@@ -14,6 +14,8 @@ Idag har Jag och hunden Bella varit på en promenad.
 
 <!--more-->
 
+Bilden är tagen med min mobilkamera (standardinställningar), jag har en OnePlus 6T.
+
 Vi gick en promenad i vårt vanliga område. Det var lite kallt så Bella fick ha på sig sin jacka för att inte frysa. Under promenaden hittade hon en pinne som hon lekte med ett tag. För henne är leka att bita sönder pinnen. Bilden är tagen i vårt bostadsområde.
 
 [FIGURE src="image/blogg/bella.jpg?w=700&" class="figure center w50" caption="Som ni ser blev bilden roterad"]
