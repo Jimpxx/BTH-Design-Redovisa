@@ -1,5 +1,5 @@
 /*!
- * Stylesheet for design kmom05.less.
+ * Stylesheet for design kmom06-designelement.less.
  *
  * This stylesheet is for the design course and kmom02 where we use LESS.
  */
@@ -5466,6 +5466,26 @@ figure.asciinema .asciicast {
 figure.codepen,
 figure.figure-codepen {
   width: 100%;
+}
+.row {
+  width: 100%;
+}
+.inner-wrap-header .row {
+  margin-bottom: 0;
+}
+.inner-wrap-flash .row {
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+.inner-wrap-flash {
+  max-width: 100%;
+}
+.region-flash {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 @font-face {
   font-family: 'Open Sans';

@@ -5046,9 +5046,6 @@ h1 {
   margin-left: auto;
   max-width: 100%;
 }
-.inner-wrap-header .row {
-  max-width: 100%;
-}
 .region-header-col-1,
 .region-header-col-3 {
   display: inline;
