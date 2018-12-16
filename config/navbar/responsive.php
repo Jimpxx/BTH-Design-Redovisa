@@ -78,6 +78,11 @@ return [
         "text" => "Rapport",
         "url" => "rapport",
         "title" => "Skrivna rapporter",
-    ],
+        ],
+        [
+            "text" => "Designelement",
+            "url" => "designelement",
+            "title" => "Sida för att visa upp designelement",
+        ],
     ],
 ];

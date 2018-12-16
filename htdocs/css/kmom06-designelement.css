@@ -4418,7 +4418,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Charm', cursive;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -5487,6 +5487,49 @@ figure.figure-codepen {
   margin-left: 0;
   margin-right: 0;
 }
+.inner-wrap-main {
+  max-width: 100%;
+}
+.inner-wrap-main .row {
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+.region-main {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+h1 {
+  border-bottom: 0;
+  text-align: center;
+  font-weight: 700;
+}
+h2 {
+  border-bottom: 0;
+}
+h3 {
+  border-bottom: 0;
+}
+h4 {
+  border-bottom: 0;
+}
+.section {
+  margin-bottom: 48px;
+  padding: 48px;
+}
+.section:nth-child(odd) {
+  background: #fd4d4d;
+}
+.section figure.figure.right {
+  margin-left: 72px;
+  margin-bottom: 60px;
+}
+.section figure.figure.left {
+  margin-right: 72px;
+  margin-bottom: 60px;
+}
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -5498,4 +5541,16 @@ figure.figure-codepen {
   font-style: normal;
   font-weight: 700;
   src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOUuhs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Charm';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Charm Regular'), local('Charm-Regular'), url(https://fonts.gstatic.com/s/charm/v3/7cHmv4oii5K0MdYoK-s.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Charm';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Charm Bold'), local('Charm-Bold'), url(https://fonts.gstatic.com/s/charm/v3/7cHrv4oii5K0Md6TDvs7wHo.ttf) format('truetype');
 }
