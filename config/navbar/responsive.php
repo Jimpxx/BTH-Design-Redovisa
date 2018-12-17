@@ -84,5 +84,10 @@ return [
             "url" => "designelement",
             "title" => "Sida för att visa upp designelement",
         ],
+        [
+            "text" => "Designprinciper",
+            "url" => "designprinciper",
+            "title" => "Sida för att visa upp designprinciper",
+        ],
     ],
 ];

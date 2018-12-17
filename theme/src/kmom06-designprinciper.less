@@ -1,0 +1,220 @@
+/*!
+ * Stylesheet for design kmom06-designelement.less.
+ *
+ * This stylesheet is for the design course and kmom02 where we use LESS.
+ */
+
+
+@import "kmom04.less";
+
+
+/**
+ * Figure and figcaption for images and other media using figure/figcaption
+ */
+ @import "@desinax/figure/less/asciinema.less";
+ @import "@desinax/figure/less/codepen.less";
+ @import "@desinax/figure/less/figure.less";
+
+
+
+// Enable style from the module and optinally add customized layout
+figure.figure {
+    #desinax-figure.figure();
+}
+
+figure.asciinema {
+    &:extend(figure.figure);
+    #desinax-figure.asciinema();
+}
+
+figure.codepen,
+figure.figure-codepen {
+    &:extend(figure.figure);
+    #desinax-figure.codepen();
+}
+
+
+// Enable style from the module and optinally add customized layout
+// figure.figure {
+//     @maxContentWidth: 1100px;
+//     #desinax-figure.figure(@maxContentWidth);
+// }
+
+.row {
+    width: 100%;
+}
+
+.inner-wrap-header .row {
+    margin-bottom: 0;
+}
+
+.inner-wrap-flash .row {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+
+.inner-wrap-flash {
+    max-width: 100%;
+    
+    // background: url(image/theme/header.png) no-repeat center center/cover;
+}
+
+// .inner-wrap-flash .img {
+//     width: 100%;
+//     height: 200px;
+// }
+
+.region-flash {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+
+
+.inner-wrap-main {
+    max-width: 100%;
+}
+
+.inner-wrap-main .row {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+
+.region-main {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+h1 {
+    border-bottom: 0;
+    text-align: center;
+    font-weight: 700;
+}
+
+h2 {
+    border-bottom: 0;
+}
+
+h3 {
+    border-bottom: 0;
+}
+
+h4 {
+    border-bottom: 0;
+}
+
+.section {
+    margin-bottom: 144px;
+    // padding-bottom: 60px;
+    
+}
+
+.heading {
+    padding: 24px;
+    text-align: center;
+    background-color: rgb(252, 106, 62);
+}
+
+.page-content {
+    padding: 20px 48px;
+}
+
+// .section:nth-child(odd) {
+//     background: #fd4d4d;
+// }
+
+.section figure.figure.right {
+    margin-left: 72px;
+    margin-bottom: 60px;
+}
+
+.section figure.figure.left {
+    margin-right: 72px;
+    margin-bottom: 60px;
+}
+
+
+.slide-left {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide-left .page-content {
+    animation: slide-left 5s ease-out;
+}
+
+@keyframes slide-left {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+// .slide-right {
+//     width: 100%;
+//     overflow: hidden;
+// }
+
+// .slide-right .page-content {
+//     animation: slide-right 5s ease-out;
+// }
+
+// @keyframes slide-right {
+//     from {
+//         margin-left: -100%;
+//         width: 300%;
+//     }
+
+//     to {
+//         margin-left: 0;
+//         width: 100%;
+//     }
+// }
+
+
+
+
+
+//  @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+//  @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+//  @fontFamilyMerriweather: 'Merriweather', serif;
+//  @fontFamilyRoboto: 'Roboto', sans-serif;
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Charm:400,700');
+
+@fontFamilyOpenSans: 'Open Sans', sans-serif;
+@fontFamilyCharm: 'Charm', cursive;
+
+@bgColorNav: #eee;
+@bgColorHtml: #fff;
+@bgColorBody: #fff;
+@bgColorFooter: #eee;
+@textColor: #222;
+@linkColor: #1339b6;
+@linkColorHover: #123299;
+
+
+// Edit the typographic grid to my needs
+@fontFamilyHeadings: @fontFamilyCharm; // @fontFamilyHelvetica; //"serif";
+@fontFamilyBody: @fontFamilyOpenSans; // @fontFamilyGaramond; //"sans-serif"; // "serif"
+// @fontFamilyHeadings: @fontFamilyMerriweather; // @fontFamilyHelvetica; //"serif";
+// @fontFamilyBody: @fontFamilyRoboto; // @fontFamilyGaramond; //"sans-serif"; // "serif"
+@fontFamilyCode: @fontFamilyCourier; //"monospace";
+
+// Magic number and base fontsize
+@magicNumber:  24px;  // 22px
+@fontSizeBody: 16px;
