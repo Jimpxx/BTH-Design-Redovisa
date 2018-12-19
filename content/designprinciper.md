@@ -16,7 +16,7 @@ views:
     #             type: single
     #             route: block/om-redovisa
 ---
-Designelement
+Designprinciper
 =========================
 
 <section class="section section-1">
