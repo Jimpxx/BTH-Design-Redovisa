@@ -2,11 +2,22 @@ Revision History
 ====================
 
 
+v10.0.0 (2018-12-04)
+--------------------
+
+* Done with kmom10.
+
+
+v6.0.1 (2018-12-04)
+--------------------
+
+* Edited the submenu to include kmom06 + edited the text in a H1.
+
+
 v6.0.0 (2018-12-04)
 --------------------
 
 * Done with kmom06.
-
 
 
 v5.0.2 (2018-12-04)
